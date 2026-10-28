@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security problem
+    url: https://github.com/allcapsjoe/now-playing/security/advisories/new
+    about: Please report security problems privately, not as an issue.
+  - name: Making skins
+    url: https://github.com/allcapsjoe/now-playing/blob/main/docs/skins.md
+    about: The skin format, with every attribute a skin can use.

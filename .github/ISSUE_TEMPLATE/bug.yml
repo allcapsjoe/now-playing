@@ -1,0 +1,58 @@
+name: Bug report
+description: Something doesn't work as it should.
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reporting it. Please check [Troubleshooting](https://github.com/allcapsjoe/now-playing#troubleshooting) first, and don't include anything private, like your listening history.
+  - type: textarea
+    id: what
+    attributes:
+      label: What happened?
+      description: And what did you expect to happen instead?
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can it be reproduced?
+      placeholder: |
+        1. Choose the Cassette deck skin
+        2. Play a song in Spotify
+        3. ...
+  - type: dropdown
+    id: os
+    attributes:
+      label: Computer
+      options: [macOS, Windows]
+    validations:
+      required: true
+  - type: input
+    id: os-version
+    attributes:
+      label: OS version
+      placeholder: macOS 15.1, Windows 11 24H2
+  - type: input
+    id: version
+    attributes:
+      label: Now Playing version
+      description: The version on the Releases page you downloaded.
+      placeholder: "0.3.0"
+    validations:
+      required: true
+  - type: input
+    id: player
+    attributes:
+      label: Music player
+      placeholder: Spotify, Apple Music, YouTube Music in Chrome
+  - type: input
+    id: skin
+    attributes:
+      label: Skin
+      placeholder: Glass terminal
+  - type: textarea
+    id: screenshot
+    attributes:
+      label: Screenshot
+      description: If it's something you can see, a screenshot helps a lot. Drag it in here.
