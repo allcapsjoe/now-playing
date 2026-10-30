@@ -1,0 +1,20 @@
+name: Idea
+description: Suggest a feature, a change or a new skin.
+labels: [enhancement]
+body:
+  - type: textarea
+    id: idea
+    attributes:
+      label: What's your idea?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What would it help you do?
+  - type: dropdown
+    id: os
+    attributes:
+      label: Computer
+      multiple: true
+      options: [macOS, Windows]
